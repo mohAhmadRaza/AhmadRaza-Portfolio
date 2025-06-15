@@ -3,18 +3,18 @@
 
 /* Base Styles */
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --accent-color: #61dafb;
-    --dark-color: #301934;
-    --text-color: #333;
+    --primary-color: #8A2BE2;  /* Vibrant purple */
+    --secondary-color: #9370DB;  /* Medium purple */
+    --accent-color: #DA70D6;  /* Orchid purple */
+    --dark-color: #2D1B36;  /* Dark purple */
+    --text-color: #2D1B36;  /* Dark purple for text */
     --text-light: #f5f5f5;
-    --light-color: #f9fafb;
-    --gray-color: #888;
-    --border-color: #e0e0e0;
+    --light-color: #F5F0FF;  /* Very light purple */
+    --gray-color: #9B8AA6;  /* Muted purple */
+    --border-color: #E6E0F0;  /* Light purple border */
     --container-width-lg: 80%;
     --container-width-md: 90%;
-    --bg-gradient: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    --bg-gradient: linear-gradient(to right, #2D1B36, #4B2E5D, #6B3E8A);
 }
 
 * {
@@ -92,7 +92,7 @@ section {
     background: var(--primary-color);
     opacity: 0.9;
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
 }
 
 .secondary-btn {
@@ -105,7 +105,7 @@ section {
     background: var(--primary-color);
     color: white;
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
 }
 
 /* Header */
@@ -121,7 +121,7 @@ section {
 }
 
 .scroll-header .nav-link {
-    color: black;
+    color: var(--dark-color);
 }
 
 .nav {
@@ -176,9 +176,10 @@ section {
 }
 
 .scroll-header {
-    background: rgba(18, 18, 18, 0.9);
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    background: rgba(245, 240, 255, 0.95);  /* Very light purple with opacity */
+    box-shadow: 0 1px 8px rgba(45, 27, 54, 0.1);
     padding: 0.5rem 0;
+    transition: all 0.3s ease;
 }
 
 /* Home Section */
@@ -334,7 +335,7 @@ section {
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background: rgba(97, 218, 251, 0.1);
+    background: rgba(218, 112, 214, 0.1);  /* Orchid purple with opacity */
     z-index: 1;
 }
 
@@ -346,7 +347,7 @@ section {
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background: rgba(0, 123, 255, 0.1);
+    background: rgba(138, 43, 226, 0.1);  /* Vibrant purple with opacity */
     z-index: 1;
 }
 
@@ -402,7 +403,7 @@ section {
 
 .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -1339,10 +1340,10 @@ section {
     transition-delay: 0.7s;
 }
 
-/* Scroll header styles */
-.scroll-header {
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem 0;
-    transition: all 0.3s ease;
+/* Update form elements */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(138, 43, 226, 0.2);
 } 
